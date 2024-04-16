@@ -1,0 +1,18 @@
+.lets__chat{
+    display: grid;
+    grid-template-areas: 
+    "sidebar chatbox chatbox"
+    "sidebar chatbox chatbox"
+    "sidebar chatbox chatbox";
+    grid-template-columns: 25% 1fr 1fr;
+}
+
+div :nth-child(1){
+    grid-area: sidebar;
+    /* background-color: aqua; */
+}
+
+div :nth-child(2) {
+    grid-area: chatbox;
+    /* background-color: blue; */
+}

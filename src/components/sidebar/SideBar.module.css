@@ -1,0 +1,107 @@
+.sidebar{
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile__picture{
+    background-color: #ec8e8f;
+    border-radius: 50%;
+    margin-right: 20px;
+    color: white;
+    position: relative;
+}
+
+.profile__picture h1{
+    margin: 0;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.profile__picture span {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    margin: 0%;
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.user__info h1, h4{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.user__info h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.user__info h4{
+    color: gray;
+    font-size: 12px;
+}
+
+.conversation{
+    margin-top: 30%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 10px;
+    color: grey;
+    
+}
+
+.conversation h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+.chats{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.chat{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.chat h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chat:hover,.chat:focus{
+    background-color: #629df4;
+    color: white;
+    cursor: pointer;
+}
+
+.chat:hover p{
+    background-color: #6093e7;
+}
+
+.chat p{
+    margin-right: 20px;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    border-radius: 20%;
+}
