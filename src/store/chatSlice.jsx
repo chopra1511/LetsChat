@@ -13,27 +13,27 @@ const initialState = {
   user_list: [
     {
       id: 0,
-      display: "@Alan",
+      display: "Alan",
       name: "Alan",
     },
     {
       id: 1,
-      display: "@Bob",
+      display: "Bob",
       name: "Bob",
     },
     {
       id: 2,
-      display: "@Carol",
+      display: "Carol",
       name: "Carol",
     },
     {
       id: 3,
-      display: "@Dean",
+      display: "Dean",
       name: "Dean",
     },
     {
       id: 4,
-      display: "@Elin",
+      display: "Elin",
       name: "Elin",
     },
   ],
