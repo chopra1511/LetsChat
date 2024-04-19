@@ -29,7 +29,6 @@ const Messages = ({ message }) => {
   }
 
   const firstLetter = message.name.charAt(0).toUpperCase();
-  console.log(firstLetter);
 
   return (
     <>

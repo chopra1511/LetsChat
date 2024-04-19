@@ -1,3 +1,7 @@
 export default {
-  backgroundColor: "#cee4e5",
+  // backgroundColor: "black",
+  color: "black",
+  // visibility: "hidden"
+  fontFamily: "Poppins",
+  fontWeight: 600,
 };

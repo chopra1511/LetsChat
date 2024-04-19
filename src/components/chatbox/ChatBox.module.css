@@ -1,68 +1,116 @@
-.chat__box{
-    height: 100vh;
-    background-color: #edf1f5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.chat__box {
+  height: 100vh;
+  background-color: #edf1f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
-    padding: 20px;
-    border-bottom: 1px solid grey;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  padding: 20px;
+  border-bottom: 1px solid grey;
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: #edf1f5;
+  left: 25%;
 }
 
-.header h1, h4{
-    margin: 0%;
-    font-family: "Poppins", sans-serif;
+.header h1,
+h4 {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
 }
 
-.header h1{
-    font-size: 20px;
-    font-weight: bolder;
+.header h1 {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
-.header h4{
-    font-weight: 400;
-    font-size: 12px;
+.header > h4 {
+  font-weight: 400;
+  font-size: 12px;
 }
 
-.left_area h4,
-.right_area h4 {
-    color: gray;
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
+.left_area > h4,
+.right_area > h4 {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
 }
 
 .right_area {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.right_area h4{
-    margin: 0%;
-    padding: 0 20px;
+.right_area h4 {
+  margin: 0%;
+  padding: 0 20px;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  background-color: #edf1f5;
+  left: 25%;
 }
 
-.middle{
-    height: 75vh;
-    position: absolute;
-    bottom: 80px;
-    left: 25%;
-    right: 0;
-    overflow-y: scroll;
+.middle {
+  /* height: 80vh; */
+  overflow-y: scroll;
+}
+
+@media (min-width: 320px) {
+  .header {
+    margin: 0;
+  }
+  .header h1 {
+    font-size: 16px;
+  }
+  .header h4 {
+    font-size: 18px;
+  }
+  .left_area h4,
+  .right_area h4 {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 375px) {
+  .header {
+    margin: 0;
+  }
+  .header h1 {
+    font-size: 18px;
+  }
+  .header h4 {
+    font-size: 10px;
+  }
+  .left_area h4,
+  .right_area h4 {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px),(min-width: 1024px),(min-width: 1440px) {
+  .header {
+    margin: 0;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  .header h4 {
+    font-size: 12px;
+  }
+  .left_area h4,
+  .right_area h4 {
+    font-size: 12px;
+  }
 }

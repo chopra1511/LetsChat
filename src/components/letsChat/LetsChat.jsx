@@ -6,12 +6,10 @@ const LetsChat = () => {
   return (
     <div className={classes.lets__chat}>
       <div className={classes.sidebar}>
-              <SideBar />
-              {/* <h1>This is the side bar</h1> */}
+        <SideBar />
       </div>
       <div className={classes.chatbox}>
-              <ChatBox />
-              {/* <h2>Hello, I'm a chatbot! How can I help you today?</h2> */}
+        <ChatBox />
       </div>
     </div>
   );

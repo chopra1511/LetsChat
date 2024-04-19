@@ -1,28 +1,29 @@
 export default {
   control: {
-    // backgroundColor: "#fff",
+    backgroundColor: "#fff",
     fontSize: 18,
-        fontWeight: "normal",
-        padding: 20,
+    fontWeight: "normal",
+    padding: 20,
+    width: "70vw",
   },
 
-//   "&multiLine": {
-//     control: {
-//       fontFamily: "monospace",
-//       minHeight: 63,
-//     },
-//     highlighter: {
-//       padding: 9,
-//       border: "1px solid transparent",
-//     },
-//     input: {
-//       padding: 9,
-//       border: "1px solid silver",
-//     },
-//   },
+  //   "&multiLine": {
+  //     control: {
+  //       fontFamily: "monospace",
+  //       minHeight: 63,
+  //     },
+  //     highlighter: {
+  //       padding: 9,
+  //       border: "1px solid transparent",
+  //     },
+  //     input: {
+  //       padding: 9,
+  //       border: "1px solid silver",
+  //     },
+  //   },
 
   "&singleLine": {
-    // display: "inline-block",
+    display: "inline-block",
 
     highlighter: {
       padding: 1,
@@ -30,31 +31,32 @@ export default {
     },
     input: {
       padding: "10px 15px",
-        border: "1px solid black",
-       width: "70vw",
-        outline: "none",
-        borderRadius: "20px",
-        fontFamily: "Poppins"
+      border: "none",
+      outline: "none",
+      borderRadius: "20px",
+      fontFamily: "Poppins",
     },
   },
 
   suggestions: {
     list: {
       backgroundColor: "white",
-          border: "1px solid rgba(0,0,0,0.15)",
-          padding: 10,
-          fontSize: 14,
-          fontFamily: "Quicksand",
-          fontWeight: 400,
-          position: "absolute",
-          bottom: 30,
-      
+      border: "1px solid rgba(0,0,0,0.15)",
+      borderRadius: "20px",
+      padding: "20px",
+      fontSize: 14,
+      fontFamily: "Quicksand",
+      fontWeight: 600,
+      position: "absolute",
+      bottom: 30,
+      left: 60,
     },
     item: {
       padding: "10px 15px",
-      borderBottom: "1px solid rgba(0,0,0,0.15)",
+      // borderBottom: "1px solid rgba(0,0,0,0.15)",
       "&focused": {
         backgroundColor: "#cee4e5",
+        borderRadius: 8,
       },
     },
   },

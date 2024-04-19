@@ -38,22 +38,28 @@ const initialState = {
     },
   ],
   likes: 0,
+  showEmoji: false
 };
 
 const chatSlice = createSlice({
   name: "chat",
   initialState,
   reducers: {
+    toggleEmoji(state) {
+      state.showEmoji = !state.showEmoji;
+    },
     addText(state, action) {
       const newMessage = action.payload;
-          state.messages.push({
-              id: newMessage.id,
-              name: newMessage.name,
-              text: newMessage.text,
-            time: newMessage.time,
-            likes: newMessage.likes
-          });
-          console.log(newMessage);
+      if (newMessage.text !== " ") {
+        state.messages.push({
+          id: newMessage.id,
+          name: newMessage.name,
+          text: newMessage.text,
+          time: newMessage.time,
+          likes: newMessage.likes,
+        });
+      }
+        console.log(newMessage);
     },
     addLike(state, action) {
       let id = action.payload;
@@ -61,8 +67,8 @@ const chatSlice = createSlice({
         if (message.id === id) {
           message.likes++;
         }
-      })
-    }
+      });
+    },
   },
 });
 

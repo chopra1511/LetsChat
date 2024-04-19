@@ -1,18 +1,85 @@
-.lets__chat{
-    display: grid;
-    grid-template-areas: 
+.lets__chat {
+  display: grid;
+  grid-template-areas:
     "sidebar chatbox chatbox"
     "sidebar chatbox chatbox"
     "sidebar chatbox chatbox";
-    grid-template-columns: 25% 1fr 1fr;
+  grid-template-columns: 25% 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-div :nth-child(1){
-    grid-area: sidebar;
-    /* background-color: aqua; */
+div :nth-child(1) {
+  grid-area: sidebar;
 }
 
 div :nth-child(2) {
+  grid-area: chatbox;
+}
+
+@media (min-width: 320px) {
+  .lets__chat {
+    display: grid;
+    grid-template-areas:
+      "chatbox chatbox"
+      "chatbox chatbox"
+      "chatbox chatbox";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  div :nth-child(1) {
     grid-area: chatbox;
-    /* background-color: blue; */
+  }
+
+  div :nth-child(2) {
+    grid-area: chatbox;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) {
+  .lets__chat {
+    display: grid;
+    grid-template-areas:
+      "chatbox chatbox"
+      "chatbox chatbox"
+      "chatbox chatbox";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  div :nth-child(1) {
+    grid-area: chatbox;
+  }
+
+  div :nth-child(2) {
+    grid-area: chatbox;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .lets__chat {
+    display: grid;
+    grid-template-areas:
+      "sidebar chatbox chatbox"
+      "sidebar chatbox chatbox"
+      "sidebar chatbox chatbox";
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  div :nth-child(1) {
+    grid-area: sidebar;
+  }
+
+  div :nth-child(2) {
+    grid-area: chatbox;
+  }
+  .sidebar{
+    display: block;
+  }
 }

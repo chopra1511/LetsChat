@@ -18,7 +18,7 @@ const ChatBox = () => {
         <div className={classes.right_area}>
           <h4>3 / 100</h4>
           <IconButton>
-            <PeopleRoundedIcon fontSize="large" />
+            <PeopleRoundedIcon />
           </IconButton>
         </div>
       </div>

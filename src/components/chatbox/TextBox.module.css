@@ -1,21 +1,34 @@
 .container {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 20px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.input{
-    width: 95%;
-    border-radius: 20px;
-    padding: 10px 30px;
-    font-size: 16px;
-    border: 1px solid grey;
-    outline: none;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 300;   
+.input {
+  width: 95%;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: 1px solid grey;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 
+.buttonContainer {
+    position: relative;
+    margin-top: 15px;
+}
 
+.emojipicker {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
+}
